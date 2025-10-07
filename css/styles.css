@@ -1,0 +1,215 @@
+/* Footer Styles */
+.site-footer {
+  background: #222;
+  color: #fff;
+  padding: 1.875rem 0; /* 30px = 1.875rem */
+  text-align: center;
+  margin-top: 2.5rem; /* 40px = 2.5rem */
+  font-family: Arial, sans-serif;
+}
+
+.footer-contact {
+  margin-bottom: 0.9375rem; /* 15px = 0.9375rem */
+}
+
+.footer-link {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+.footer-social {
+  margin-bottom: 0.9375rem; /* 15px = 0.9375rem */
+}
+
+.footer-social-link {
+  margin: 0 0.625rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-social-link:hover {
+  color: #ffd700;
+}
+
+.footer-copyright {
+  font-size: 0.95em;
+  opacity: 0.8;
+}
+body {
+    text-align: center;
+    background-color: lightslategray;
+    margin: 0;
+}
+
+h1 {
+    color: blue;
+    background-attachment: scroll;
+    font-size: 4rem;
+    margin: 0;
+    padding-top: 2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(90deg, blue, white, red, blue);
+    background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+    animation: gradientShift 10s ease infinite;
+}
+@keyframes gradientShift {
+  0%{ background-position: 0% 50%;
+  }
+  50% {background-position: 100% 50%;
+  }
+  100% {background-position: 0% 50%;
+  }
+}
+
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 25%;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    color: blue;
+    text-shadow: 0.1rem 0.1rem 0.1rem rgb(243, 245, 247);
+    
+}
+
+
+.Welcome {
+background: url("../images/sun.jpg") no-repeat center center fixed;   
+background-size: cover;
+  background-position: center;
+  transition: background-image 2s ease-in-out;
+  position: relative;
+}
+
+.pText {
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: gold;
+}
+.FocusMenu{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+  gap: 1rem;
+  margin: 1.5rem auto;
+  max-width: 45rem;
+  padding: 1rem;
+}
+.optionMenu{
+padding: 0.9rem;
+  font-size: 1.1rem;
+  color: yellow;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+}
+.menuContainer{
+   background: rgba(255, 255, 255, 0.1);
+  border-radius: 4rem;
+  overflow: hidden;
+  box-shadow: 0 0 1.5rem rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.menuContainer:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(236, 233, 7, 0.8);
+}
+.menuContainer img {
+  width: 100%;
+  height: 6.5rem;
+  object-fit: cover;
+  display: block;
+}
+
+.menuContainer a{
+  text-decoration: none;
+}
+
+.toolbar{
+  display: flex;
+  margin: 0;
+  z-index: 10;
+  position: fixed;
+  right: 0.1rem;
+  top: 0.3rem;
+  gap: 0.3rem;
+}
+
+.button{
+  border-color: aliceblue;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  height: 2rem;
+}
+
+.support{
+  display: flex;
+  margin: 0;
+  z-index: 10;
+  position: fixed;
+  top: 0.3rem;
+  left: 0.1rem;
+  
+
+}
+.supportButton{
+  cursor: pointer;
+border-radius: 1rem;  
+border-color: #7eaf80;
+  background: linear-gradient(270deg, #ff6a00, #ee0979, #2193b0, #6dd5ed, yellow, blue, white);
+  background-size: 800% 800%;
+  animation: gradientShift 12s ease infinite;
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.supportButton:hover{
+  height: 1.6rem;
+  width: 7rem;
+  color: white;
+  background: linear-gradient(270deg, #c56623, #139453, #2193b0, #3916d4);
+  background-size: 800% 800%;
+}
+
+body.dark-mode {
+  background-color: #0e0e0e;
+  color: #f2f2f2;
+}
+
+body.dark-mode .optionMenu {
+  background: rgba(255,255,255,0.1);
+  color: gold;
+}
+
+body.dark-mode .menuContainer {
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 0 1rem rgba(255, 215, 0, 0.4);
+}
+
+body.dark-mode .site-footer {
+  background: #111;
+}
+.verse-banner {
+  background: rgba(0, 0, 0, 0.6);
+  color: gold;
+  padding: 1rem;
+  font-style: italic;
+  border-radius: 1rem;
+  width: fit-content;
+  margin: 1rem auto;
+}
+
+.verse-banner p {
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
