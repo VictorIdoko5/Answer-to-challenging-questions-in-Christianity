@@ -69,3 +69,19 @@ function changeVerse() {
     verseBanner.classList.remove('fade-out');
   }, 1000);
 }
+
+window.onload = function() {
+  // Always show the modal on page load
+  document.getElementById("welcomeModal").style.display = "flex";
+
+  document.getElementById("laterBtn").onclick = function() {
+    document.getElementById("welcomeModal").style.display = "none";
+    // ✅ No saving — so it will come back again on refresh
+  };
+
+  document.getElementById("supportBtn").onclick = function() {
+    document.getElementById("welcomeModal").style.display = "none";
+    // ✅ Redirect to support page
+    window.location.href = "Support Us.html";
+  };
+};
