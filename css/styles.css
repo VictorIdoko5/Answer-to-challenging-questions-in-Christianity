@@ -231,7 +231,7 @@ body.dark-mode .site-footer {
   background: #fff;
   color: #333;
   padding: 1rem;
-  border-radius:  4rem;
+  border-radius:  3rem;
   max-width: 20rem;
   text-align: center;
   box-shadow: 0 5px 1rem rgba(0,0,0,0.3);
@@ -267,6 +267,7 @@ body.dark-mode .site-footer {
   from {opacity: 0; transform: scale(0.9);}
   to {opacity: 1; transform: scale(1);}
 }
+
 
 
 
